@@ -6,7 +6,7 @@ navbar_entries:
     url: blog
 
   - title: website
-    url: http://www.grawey.me
+    url: http://www.abhinav.co
 
 project_entries:
   - title: Project 1
@@ -105,3 +105,5 @@ misc_entries:
 
           - title: it is easy to use, see _data/home.yml to see how to configure it.
             url: false
+
+
