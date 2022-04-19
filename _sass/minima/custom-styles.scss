@@ -1,0 +1,83 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+body {
+  background-color: $bg;
+  color: $label;
+}
+
+// Global
+pre,
+code {
+  background-color: $bgPlaceholder;
+  border-color: $keyline;
+}
+
+// Header
+.site-header {
+  border-bottom: 1px solid $keyline;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .site-title {
+      color: $title;
+    }
+
+    .site-nav {
+      div {
+        .page-link {
+          color: $navLabel;
+
+          &:hover {
+            color: $navLabelHover;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Content
+.page-content {
+  .post-meta {
+    color: $labelCaption;
+  }
+
+  a {
+    color: $ctrl;
+  }
+}
+
+// Posts
+.post-header {}
+
+.post-content {
+}
+
+
+.social-media-list {
+  display: table;
+  margin: 0 auto;
+
+  li {
+    float: left;
+    margin: 5px 10px 5px 0;
+
+    &:last-of-type {
+      margin-right: 0
+    }
+
+    a {
+      display: block;
+      padding: $spacing-unit / 4;
+      border: 1px solid $border-color-01;
+
+      &:hover {
+        border-color: $border-color-02
+      }
+    }
+  }
+}
