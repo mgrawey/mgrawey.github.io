@@ -58,19 +58,4 @@ layout: default
 
   {%- endif -%}
 
-  {%- if site.projects.size > 0 -%}
-  <section>
-    <h1 class="sectionTitle">Projects</h1>
-        <ul class="post-list">
-          {%- for project in site.projects -%}
-            <li><h3>
-              <a class="post-link" href="{{ project.url | relative_url }}">
-                {{ project.title | escape }}
-              </a>
-            </h3></li>
-          {%- endfor -%}
-        </ul>
-      </section>
-      {%- endif -%}
-
 </div>

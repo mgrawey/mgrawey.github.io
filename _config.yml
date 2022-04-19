@@ -36,7 +36,14 @@ plugins:
   - jekyll-feed
 
 collections:
-  - designs
+  projects:
+    output: true
+    permalink: /:collection/:name
+
+permalink: none
+
+include:
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.

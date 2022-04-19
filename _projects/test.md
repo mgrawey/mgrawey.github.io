@@ -1,6 +1,7 @@
 ---
+layout: project
 title: Test Design
-dateCompleted: April, 15, 2022
+completed: April 15, 2022
 ---
 
 This is a test document to see if this works.
