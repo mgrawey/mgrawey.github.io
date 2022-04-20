@@ -10,7 +10,7 @@ layout: default
   {{ content }}
 
 
-  {% if site.paginate %}
+  <!-- {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
     {% assign posts = site.posts %}
@@ -37,40 +37,31 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
+  {%- endif -%} -->
 
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
+  <section id="about">
+    <h1 class="sectionTitle">About</h1>
+    <p>My name is Mykiele Grawey and I'm a student currently learning Graphic Design. I've created this site to show my collection of projects and ideas that I've put together in, and out of, school.</p>
+  </section>
 
   {%- if site.projects.size > 0 -%}
-  <section>
-    <h1 class="sectionTitle">Projects</h1>
-        <ul class="post-list">
-          {%- for project in site.projects -%}
-            <li><h3>
+    <section id="projects">
+      <h1 class="sectionTitle">Projects</h1>
+      <ul class="post-list">
+        {%- for project in site.projects -%}
+          <li>
+            <h4>
               <a class="post-link" href="{{ project.url | relative_url }}">
                 {{ project.title | escape }}
               </a>
-            </h3></li>
-          {%- endfor -%}
-        </ul>
-      </section>
-      {%- endif -%}
+          </h4>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </section>
+  {%- endif -%}
+
+  {%- include footer.html -%}
+
 
 </div>

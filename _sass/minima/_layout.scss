@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-  // border-top: 5px solid $border-color-03;
-  border-bottom: 1px solid $keyline;
+  border-top: 5px solid $border-color-03;
+  border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
 
@@ -16,8 +16,7 @@
   font-weight: 300;
   letter-spacing: -1px;
   margin-bottom: 0;
-  // float: left;
-  color: $title;
+  float: left;
 
   @include media-query($on-palm) {
     padding-right: 45px;
@@ -25,25 +24,25 @@
 
   &,
   &:visited {
-    color: $title;
+    color: $site-title-color;
   }
 }
 
 .site-nav {
-  // position: absolute;
-  // top: 9px;
-  // right: $spacing-unit / 2;
+  position: absolute;
+  top: 9px;
+  right: $spacing-unit / 2;
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
-  // text-align: right;
+  text-align: right;
 
   .nav-trigger {
     display: none;
   }
 
   .menu-icon {
-    // float: right;
+    float: right;
     width: 36px;
     height: 26px;
     line-height: 0;
@@ -75,7 +74,7 @@
   }
 
   .page-link {
-    color: $navLabel;
+    color: $text-color;
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
@@ -88,8 +87,8 @@
   }
 
   @media screen and (min-width: $on-medium) {
-    // position: static;
-    // float: right;
+    position: static;
+    float: right;
     border: none;
     background-color: inherit;
 
@@ -125,6 +124,7 @@
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
+  max-width: calc(800px - ($spacing-unit / 2))
 }
 
 .footer-heading {
@@ -149,6 +149,7 @@
 }
 
 .footer-col {
+  border: 1px solid red;
   margin-bottom: $spacing-unit / 2;
 }
 
@@ -225,7 +226,7 @@
 
 .post-meta {
   font-size: $small-font-size;
-  color: $labelCaption;
+  color: $brand-color;
 }
 
 .post-link {

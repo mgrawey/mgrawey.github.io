@@ -51,6 +51,35 @@ $clrGray: #98989D;
 $clrIndigo: #5E5BE6;
 $clrPink: #FF573F;
 $clrRed: #FF453A;
+$clrMagenta: #DA0F47;
 $clrYellow: #FFD60A;
 
+$brand-color: $title !default;
+$brand-color-light: lighten($brand-color, 40%) !default;
+$brand-color-dark: darken($brand-color, 25%) !default;
+
+$site-title-color: $brand-color !default;
+
+$text-color: $label !default;
+$text-color-5: darken($text-color, 5%) !default;
+$text-color-10: darken($text-color, 10%) !default;
+$text-color-15: darken($text-color, 15%) !default;
+$text-color-20: darken($text-color, 20%) !default;
+$text-color-25: darken($text-color, 25%) !default;
+
+$background-color: $bg !default;
 $code-background-color: $bgPlaceholder !default;
+
+$link-base-color: $ctrl !default;
+$link-visited-color: $ctrl !default;
+$link-hover-color: $ctrlHover !default;
+
+$border-color-01: $keyline !default;
+$border-color-02: lighten($brand-color, 35%) !default;
+$border-color-03: $brand-color-dark !default;
+
+$table-text-color: $text-color, 18% !default;
+$table-zebra-color: $bgPlaceholder !default;
+$table-header-bg-color: lighten($bgPlaceholder, 5%) !default;
+$table-header-border: $keyline !default;
+$table-border-color: $border-color-01 !default;
