@@ -1,4 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=Roboto+Mono:ital@0;1&display=swap');
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: 100 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('../../fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: 100 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('../../fonts/DM_Mono/DMMono-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('../../fonts/DM_Mono/DMMono-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('../../fonts/DM_Mono/DMMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('../../fonts/DM_Mono/DMMono-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('../../fonts/DM_Mono/DMMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('../../fonts/DM_Mono/DMMono-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
 
 $base-font-family: "Roboto Mono", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Symbol", "Segoe UI Emoji", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
 $code-font-family: "DM Mono", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;

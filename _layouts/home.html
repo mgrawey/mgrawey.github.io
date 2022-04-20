@@ -26,11 +26,11 @@ layout: default
       {%- for post in posts -%}
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
+        <p>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-        </h3>
+        </p>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
@@ -50,11 +50,11 @@ layout: default
       <ul class="post-list">
         {%- for project in site.projects -%}
           <li>
-            <h4>
+            <p>
               <a class="post-link" href="{{ project.url | relative_url }}">
                 {{ project.title | escape }}
               </a>
-          </h4>
+          </p>
         </li>
         {%- endfor -%}
       </ul>

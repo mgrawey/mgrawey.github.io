@@ -10,7 +10,6 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-
 }
 
 
@@ -29,7 +28,7 @@ body {
           font-feature-settings: "kern" 1;
   font-kerning: normal;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
   overflow-wrap: break-word;
 }
@@ -165,6 +164,7 @@ code {
   border: 1px solid $border-color-01;
   border-radius: 3px;
   background-color: $code-background-color;
+  font-style: italic;
 }
 
 code {
@@ -230,11 +230,11 @@ pre {
  */
 
 .orange {
-  color: #f66a0a;
+  color: $clrOrange;
 }
 
 .grey {
-  color: #828282;
+  color: $clrGray;
 }
 
 .svg-icon {
