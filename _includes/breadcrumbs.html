@@ -5,7 +5,7 @@
     {% if forloop.last %}
       / {{ page.title | truncatewords: 3}}
     {% else %}
-      / {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+      / <span class="caption">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</span>
     {% endif %}
   {% endfor %}
   </div>

@@ -35,5 +35,9 @@ section {
 .post-header {
   #breadcrumbs {
     margin-bottom: $spacing-unit / 4;
+
+    .caption {
+      color: $labelCaption;
+    }
   }
 }
